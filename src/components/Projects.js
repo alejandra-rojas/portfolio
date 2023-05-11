@@ -24,8 +24,8 @@ function Projects() {
             onClick={() => setShowModal(true)}
           >
             <span className="tooltiptext">
-              I implemented a modal now, but need to fill it with project
-              details...
+              I implemented a modal now, but still need to fill it with project
+              details.
             </span>
             <div className="project--img">
               <img

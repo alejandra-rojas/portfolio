@@ -409,6 +409,10 @@ a:focus {
   color: black;
 }
 
+.project--links a:link {
+  text-decoration: underline;
+}
+
 /* Modal */
 .modal {
   display: block;
