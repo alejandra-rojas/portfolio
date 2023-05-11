@@ -1,13 +1,406 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}
+
+@font-face {
+  font-family: "OnsiteRegular"; /*Can be any text*/
+  src: local("OnsiteStandard"),
+    url("./fonts/OnsiteStandardTRIAL-Regular.otf") format("otf");
+}
+
+:root {
+  scroll-behavior: smooth;
+  --yellow: #edd139;
+  --anotheryellow: #ffd500;
+  --whitish: #f1efe9;
+  --grey: #f5f0ea;
+  --green: #d7e10b;
+  --orange: #df9504;
+  --neonyellow: #f0f208;
+  --brown: #2a0000;
+  --green: #55ec80;
+  --oat: #edebdc;
+}
+
+body {
+  background-color: var(--whitish);
+  margin: 0;
+  font-family: Inter, "Courier New", Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--whitish);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Fixed Header */
+.header--static {
+  width: 100%;
+  padding: 5rem 6rem 0 6rem;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  z-index: 900;
+}
+
+.nav-main {
+}
+
+nav ul li a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a.active {
+  color: black;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+/* Sections */
+
+.hundredvh {
+  width: 100%;
+  height: 100vh;
+}
+
+.centered {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+/* Hello Styles */
+
+.left-right {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.bottom {
+  padding-bottom: 11rem;
+}
+
+.section--hello {
+  background-color: var(--oat);
+  /* position: relative; */
+}
+
+.name {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+}
+
+.intro {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--brown);
+}
+
+p {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.IconContainer--Hello {
+  display: flex;
+  margin: auto 0 0;
+  padding-bottom: 16px;
+  /* position: absolute;
+  bottom: -200px; */
+}
+
+.IconContainer--Hello svg {
+  height: 2em;
+  width: auto;
+  margin-right: 1.25em;
+}
+
+/* Timeline Styles */
+
+.section--journey {
+  font-family: "Azeret Mono", monospace;
+  background-color: #55ec80;
+  /*   position: relative;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 100vh; */
+}
+
+/* .continue {
+  display: hide;
+  position: fixed;
+  bottom: 0;
+  left: 50px;
+  z-index: 700;
+} */
+
+.show {
+  position: absolute;
+  display: block;
+  z-index: 700;
+  left: 10px;
+}
+
+main {
+  overflow-x: hidden;
+  display: flex;
+  position: sticky;
+  top: 0;
+  margin-left: 40px;
+  gap: 96px;
+  z-index: 500;
+}
+
+.timeline--item {
+  /* min-width: 25vw; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 35vh;
+}
+
+.hidden--item {
+  opacity: 0;
+}
+/*//////////*/
+
+.timeline--img {
+  width: 300px;
+  height: 300px;
+  margin-top: -50px;
+  border-radius: 100%;
+  background-image: url("/public/images/compu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  transition: all 1s;
+  cursor: none;
+}
+
+.timeline--img:hover {
+  background-image: url("/public/images/tenis.jpg");
+}
+
+.timeline--photo--title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timeline--events {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  gap: 80px;
+  padding: 0 3rem 64px;
+}
+
+.timeline--title {
+  font-family: "Azeret Mono", monospace;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 352px;
+}
+
+.timeline--description {
+  width: 430px;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.journey,
+.continue {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.journey {
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 50px;
+}
+
+/* Project Styles */
+
+.section--project {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects--header {
+  text-transform: uppercase;
+  padding: 7rem 6rem 4.5rem;
+}
+
+.section--header {
+  padding: 25px 60px 20px 50px;
+  border-bottom: 1px solid beige;
+  background-color: #f2fc08;
+  color: #df9504;
+}
+
+.header--title {
+  font-weight: 100;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.projects--grid {
+  padding: 0 30px 100px;
+  margin: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  column-gap: 15px;
+}
+
+.project--card {
+  max-width: 25vw;
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  border: #2a0000 1px solid;
+  padding: 8px;
+}
+
+.project--card:hover {
+  background-color: var(--oat);
+  opacity: 90%;
+}
+
+.project--img {
+  height: auto;
+  position: relative;
+}
+
+.project--img img {
+  width: 100%;
+  height: auto;
+}
+
+.gif--canvas {
+  width: 400px;
+}
+
+.project--data {
+  font-family: Inter;
+  color: black;
+  padding: 0 8px 16px;
+}
+
+.project--title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 16px 0;
+}
+
+.project--description {
+  font-size: 1.1rem;
+}
+
+.project--links {
+  font-size: 0.8rem;
+  padding-top: 24px;
+}
+
+.project--stack {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.9rem;
+  background-color: var(--brown);
+  color: var(--whitish);
+  padding: 6px;
+  text-transform: uppercase;
+}
+
+.IconContainer {
+  display: flex;
+  margin: auto 0 0;
+}
+
+.IconContainer svg {
+  height: 1.3rem;
+  width: auto;
+  padding: 0 8px 0 0;
+}
+
+/* Contact Styles */
+
+.section--contact {
+  background-color: var(--yellow);
+  gap: 16px;
+}
+
+.contact--details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact--type {
+  margin-top: 18px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.contact--detail {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: black;
 }
