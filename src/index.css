@@ -23,6 +23,8 @@
   --brown: #2a0000;
   --green: #55ec80;
   --oat: #edebdc;
+  --orange: #ff4500;
+  --blue: #0000ff;
 }
 
 body {
@@ -243,6 +245,7 @@ main {
 .timeline--description {
   width: 430px;
   font-size: 16px;
+  line-height: 20px;
   font-weight: 200;
 }
 
@@ -305,6 +308,7 @@ main {
   position: relative;
   border: #2a0000 1px solid;
   padding: 8px;
+  cursor: pointer;
 }
 
 .project--card:hover {
@@ -403,4 +407,94 @@ a:active,
 a:focus {
   text-decoration: none;
   color: black;
+}
+
+/* Modal */
+.modal {
+  display: block;
+  z-index: 1000;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 97%;
+  width: 97%;
+  background-color: #2a0000;
+  opacity: 95%;
+  color: whitesmoke;
+}
+
+.modal-inner {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: 250px auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-inner h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.modal-btn {
+  margin-top: 20px;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.close--modal {
+  margin-top: 20px;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.close--button {
+  position: absolute;
+  padding: 8px 11px;
+  text-transform: lowercase;
+  right: 8px;
+  top: 8px;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  background-color: transparent;
+  display: none;
+}
+
+.close--button:hover {
+  background-color: transparent;
+  color: beige;
+  border: 1px solid beige;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80%;
+  background-color: var(--brown);
+  color: whitesmoke;
+  text-align: center;
+  padding: 8px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  right: 0;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

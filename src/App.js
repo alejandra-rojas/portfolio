@@ -3,6 +3,7 @@ import Hello from "./components/Hello";
 import Journey from "./components/Journey";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import ProjectModal from "./components/ProjectModal";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Journey />
       <Projects />
       <Contact />
+      {/* <ProjectModal /> */}
     </div>
   );
 }

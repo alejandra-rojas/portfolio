@@ -99,16 +99,19 @@ function Journey() {
             Graduated from UDLAP, Mexico. <br />
             <br />
             One of the highlights of my studies was going to Amsterdam for my
-            intenrship at GLU magazine. This was my first time in Europe, and
-            the design of the city made a big impression on me, which later made
-            me change the course of my career.
+            internship at GLU magazine. This was my first time in Europe, and
+            the design of the city made a big impression on me, this later led
+            me to change the course of my career.
           </div>
         </div>
         <div className="timeline--item">
           <div className="timeline--title">2008 Moved to Barcelona</div>
           <div className="timeline--description">
-            Joined the MA Urban Design: Art, City, Society in Universitat de
-            Barcelona. At the same time I was doing freelance design jobs.
+            Joined the MA Urban Design: Art, City, Society at the Universitat de
+            Barcelona. <br />
+            <br />
+            At the same time I was working as a freelance designer, mostly
+            editorial, but also some web design.
           </div>
         </div>
         <div className="timeline--item">
@@ -120,7 +123,7 @@ function Journey() {
             still not in the political agenda. <br />
             <br />
             At this time, I started to code with the basics (HTML, CSS and JS),
-            and got a job in Guru Brand Buro as a developer.
+            and got a job at Gurú Brand Buro as a developer.
           </div>
         </div>
         <div className="timeline--item">
@@ -129,17 +132,18 @@ function Journey() {
             Still thinking about the design of the cities, I managed to get
             government funding (CONACYT) to do a Science Masters in Urban
             Regeneration at Sheffield Hallam University. <br />
-            <br /> I continued working remotly for Guru for a little longer,
+            <br /> I continued working remotly for Gurú for a little longer,
             until the studies took all of my time.
           </div>
         </div>
         <div className="timeline--item">
           <div className="timeline--title">2014-2022 Paid the bills</div>
           <div className="timeline--description">
-            After getting my MSc I moved to London, but finding a job in urban
-            development was still hard, and soon I had to find ANY job to start
-            paying the bills. I did mostly customer support throught out this
-            time, and during the pandemic I was moderating content for TikTok.
+            After graduating from the MSc, I moved to London, finding a job in
+            urban development was still hard. Soon I had to find ANY job to
+            start paying the bills. I did mostly customer support throught out
+            this time, and during the pandemic I was moderating content for
+            TikTok.
           </div>
         </div>
         <div className="timeline--item">
