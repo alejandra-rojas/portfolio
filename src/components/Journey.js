@@ -75,7 +75,10 @@ function Journey() {
 
   const handleScroll = () => {
     const aboutSection = document.getElementById("projects");
-    aboutSection.scrollIntoView({ behavior: "smooth" });
+    aboutSection.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+    });
   };
 
   return (
