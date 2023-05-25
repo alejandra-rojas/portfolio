@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import styles from "./Journey.module.css";
 
 function Journey() {
   const [isAboutSectionInView, setIsAboutSectionInView] = useState(false);
@@ -85,21 +86,21 @@ function Journey() {
   return (
     <div className="section--journey sticky-container" id="about">
       <main>
-        <div className="timeline--item"></div>
-        <div className="timeline--item">
+        <div className={styles.timelineItem}></div>
+        <div className={styles.timelineItem}>
           <div
             alt="Baby Ale with her first computer"
-            className="timeline--img"
+            className={styles.timelineImg}
           ></div>
-          <div className="timeline--photo--title">
+          <div className={styles.timelinePhotoTitle}>
             My interest in technology & tennis started at a young age
           </div>
         </div>
-        <div className="timeline--item">
-          <div className="timeline--title">
+        <div className={styles.timelineItem}>
+          <div className={styles.timelineTitle}>
             2007 Information Design bachelor
           </div>
-          <div className="timeline--description">
+          <div className={styles.timelineDescription}>
             Graduated from UDLAP, Mexico. <br />
             <br />
             One of the highlights of my studies was going to Amsterdam for my
@@ -108,9 +109,9 @@ function Journey() {
             change my career path.
           </div>
         </div>
-        <div className="timeline--item">
-          <div className="timeline--title">2008 Moved to Barcelona</div>
-          <div className="timeline--description">
+        <div className={styles.timelineItem}>
+          <div className={styles.timelineTitle}>2008 Moved to Barcelona</div>
+          <div className={styles.timelineDescription}>
             Joined the MA Urban Design: Art, City, Society at the Universitat de
             Barcelona. <br />
             <br />
@@ -118,9 +119,11 @@ function Journey() {
             editorial, but also some web design.
           </div>
         </div>
-        <div className="timeline--item">
-          <div className="timeline--title">2010 Started coding webpages</div>
-          <div className="timeline--description">
+        <div className={styles.timelineItem}>
+          <div className={styles.timelineTitle}>
+            2010 Started coding webpages
+          </div>
+          <div className={styles.timelineDescription}>
             Back from Spain, I attempted to get my foot in the planning
             department of the city, however it was hard, partly because of the
             politics of mexican bureocracy, and also because urban renewal was
@@ -130,9 +133,9 @@ function Journey() {
             and got a job at Gurú Brand Buro as a developer.
           </div>
         </div>
-        <div className="timeline--item">
-          <div className="timeline--title">2012 Moved to the UK</div>
-          <div className="timeline--description">
+        <div className={styles.timelineItem}>
+          <div className={styles.timelineTitle}>2012 Moved to the UK</div>
+          <div className={styles.timelineDescription}>
             Still thinking about the design of the cities, I managed to get
             government funding (CONACYT) to do a Science Masters in Urban
             Regeneration at Sheffield Hallam University. <br />
@@ -140,9 +143,9 @@ function Journey() {
             until the studies took all of my time.
           </div>
         </div>
-        <div className="timeline--item">
-          <div className="timeline--title">2014-2022 Paid the bills</div>
-          <div className="timeline--description">
+        <div className={styles.timelineItem}>
+          <div className={styles.timelineTitle}>2014-2022 Paid the bills</div>
+          <div className={styles.timelineDescription}>
             After graduating from the MSc, I moved to London, and finding a job
             in urban development was still hard; Soon I had to find ANY job to
             start paying the bills. I did customer support throught out this
@@ -151,31 +154,33 @@ function Journey() {
             skills.
           </div>
         </div>
-        <div className="timeline--item">
-          <div className="timeline--title">2022 Moved to Stockholm</div>
-          <div className="timeline--description">
+        <div className={styles.timelineItem}>
+          <div className={styles.timelineTitle}>2022 Moved to Stockholm</div>
+          <div className={styles.timelineDescription}>
             I moved to Sweden following my partner & thanks to free education in
             the country, I joined the Frontend Development program @ Hyper
             Island to get myself back into coding.
           </div>
         </div>
-        <div className="timeline--item">
-          <div className="timeline--title">2023</div>
-          <div className="timeline--description">
+        <div className={styles.timelineItem}>
+          <div className={styles.timelineTitle}>2023</div>
+          <div className={styles.timelineDescription}>
             I am now looking for an internship to finish my studies and to start
             my professional career.
           </div>
         </div>
 
-        <div className="timeline--item hidden--item">
-          <div className="timeline--title">2023</div>
-          <div className="timeline--description">
+        <div className={`${styles.timelineItem} ${styles.hiddenItem}`}>
+          <div className={styles.timelineTitle}>2023</div>
+          <div className={styles.timelineDescription}>
             I am now looking for an internship to finish my studies and to start
             my professional career.
           </div>
         </div>
       </main>
-      <div className={`${isAboutSectionInView ? "show" : "continue"}`}>
+      <div
+        className={`${isAboutSectionInView ? `${styles.cvNext}` : "continue"}`}
+      >
         If you rather just look at my cv,&nbsp;
         <a
           href="/assets/CV-ARojas.pdf"

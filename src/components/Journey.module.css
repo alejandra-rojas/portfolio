@@ -1,0 +1,152 @@
+.timelineImg {
+  width: 300px;
+  height: 300px;
+  margin-top: -50px;
+  border-radius: 100%;
+  background-image: url("/public/images/compu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  transition: all 2s;
+  cursor: none;
+  animation-name: background-pic;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background-pic {
+  0% {
+    background-image: url("/public/images/compu.jpg");
+  }
+
+  50% {
+    background-image: url("/public/images/tenis.jpg");
+  }
+
+  100% {
+    background-image: url("/public/images/compu.jpg");
+  }
+}
+
+.timelinePhotoTitle {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timelineItem {
+  max-width: 90vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 30vh;
+}
+
+.timelineTitle {
+  font-family: "Azeret Mono", monospace;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 352px;
+}
+
+.timelineDescription {
+  width: 300px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 200;
+}
+
+.hiddenItem {
+  opacity: 0;
+}
+
+.cvNext {
+  display: none;
+}
+
+@media screen and (min-width: 568px) {
+  .timelineImg {
+    width: 300px;
+    height: 300px;
+    margin-top: -50px;
+    border-radius: 100%;
+    background-image: url("/public/images/compu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    transition: all 2s;
+    cursor: none;
+    animation-name: background-pic;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes background-pic {
+    0% {
+      background-image: url("/public/images/compu.jpg");
+    }
+
+    50% {
+      background-image: url("/public/images/tenis.jpg");
+    }
+
+    100% {
+      background-image: url("/public/images/compu.jpg");
+    }
+  }
+
+  .timelinePhotoTitle {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .timelineItem {
+    /* min-width: 25vw; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    padding-top: 35vh;
+  }
+
+  .timelineTitle {
+    font-family: "Azeret Mono", monospace;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 352px;
+  }
+
+  .timelineDescription {
+    width: 430px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 200;
+  }
+
+  .hiddenItem {
+    opacity: 0;
+  }
+
+  .cvNext {
+    position: absolute;
+    display: block;
+    z-index: 700;
+    left: 10px;
+  }
+
+  .cvNext a:link {
+    color: black;
+  }
+}

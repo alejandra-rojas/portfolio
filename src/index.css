@@ -50,15 +50,6 @@ code {
     monospace;
 }
 
-.container {
-  /* position: relative;
-  overflow-y: auto;
-  overscroll-behavior-y: contain;
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  width: 100%; */
-}
-
 nav ul li a:visited,
 a:focus {
   text-decoration: none;
@@ -73,24 +64,18 @@ nav ul li a:hover {
   color: black;
 }
 
-/* Sections */
-
-.hundredvh {
-  width: 100%;
-  height: 100vh;
-}
+/* Sections -- this is used in Intro/Hello*/
 
 .centered {
   display: flex;
-  /* justify-content: center; */
-  align-items: center;
+  align-items: top;
 }
 
 /* Hello Styles */
 
 .left-right {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .bottom {
@@ -99,7 +84,7 @@ nav ul li a:hover {
 
 .section--hello {
   background-color: var(--oat);
-  /* position: relative; */
+  height: 100vh;
 }
 
 ul {
@@ -110,7 +95,7 @@ ul {
 
 p {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 1rem;
 }
 
 /* Timeline Styles */
@@ -119,118 +104,39 @@ p {
   font-family: "Azeret Mono", monospace;
   background-color: #55ec80;
   /*   position: relative;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  min-height: 100vh; */
+display: flex;
+justify-content: center; 
+align-items: center;
+min-height: 100vh; */
 }
 
 /* .continue {
-  display: hide;
-  position: fixed;
-  bottom: 0;
-  left: 50px;
-  z-index: 700;
+display: hide;
+position: fixed;
+bottom: 0;
+left: 50px;
+z-index: 700;
 } */
-
-.show {
-  position: absolute;
-  display: block;
-  z-index: 700;
-  left: 10px;
-}
 
 main {
   overflow-x: hidden;
   display: flex;
   position: sticky;
   top: 0;
-  margin-left: 40px;
-  gap: 96px;
+  gap: 5rem;
   z-index: 500;
 }
 
-.timeline--item {
-  /* min-width: 25vw; */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 16px;
-  padding-top: 35vh;
-}
-
-.hidden--item {
-  opacity: 0;
-}
 /*//////////*/
 
-.timeline--img {
-  width: 300px;
-  height: 300px;
-  margin-top: -50px;
-  border-radius: 100%;
-  background-image: url("/public/images/compu.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.9;
-  transition: all 2s;
-  cursor: none;
-  animation-name: background-pic;
-  animation-duration: 12s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes background-pic {
-  0% {
-    background-image: url("/public/images/compu.jpg");
-  }
-
-  50% {
-    background-image: url("/public/images/tenis.jpg");
-  }
-
-  100% {
-    background-image: url("/public/images/compu.jpg");
-  }
-}
-
-/* .timeline--img:hover {
-  background-image: url("/public/images/tenis.jpg");
-} */
-
-.timeline--photo--title {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 12px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.timeline--events {
+/* .timeline--events {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   display: flex;
   gap: 80px;
   padding: 0 3rem 64px;
-}
-
-.timeline--title {
-  font-family: "Azeret Mono", monospace;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  max-width: 352px;
-}
-
-.timeline--description {
-  width: 430px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 200;
-}
+} */
 
 .journey,
 .continue {
@@ -248,16 +154,10 @@ main {
 
 /* Project Styles */
 
-.snap-container {
-  /* scroll-snap-type: y mandatory; */
-}
-
 .section--project {
-  width: 100%;
-  height: 100vh;
-  position: relative;
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
 }
 
 .section--header {
@@ -277,8 +177,8 @@ main {
 /* Contact Styles */
 
 .section--contact {
+  height: 100vh;
   background: var(--green);
-  /* background-color: var(--yellow); */
   gap: 16px;
   transition: all 4s;
 }
@@ -301,68 +201,168 @@ a:focus {
   color: black;
 }
 
-.show a:link {
-  color: black;
-}
+@media screen and (min-width: 568px) {
+  nav ul li a:visited,
+  a:focus {
+    text-decoration: none;
+    color: white;
+  }
 
-/* Modal */
-.modal {
-  display: block;
-  z-index: 1000;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: 97%;
-  width: 97%;
-  background-color: #2a0000;
-  opacity: 95%;
-  color: whitesmoke;
-}
+  nav ul li a.active {
+    color: black;
+  }
 
-.modal-inner {
+  nav ul li a:hover {
+    color: black;
+  }
+
+  /* Sections */
+
+  .hundredvh {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .centered {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  /* Hello Styles */
+
+  .left-right {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .bottom {
+    padding-bottom: 11rem;
+  }
+
+  .section--hello {
+    background-color: var(--oat);
+    /* position: relative; */
+  }
+
+  ul {
+    list-style: none;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 32px;
+  }
+
+  /* Timeline Styles */
+
+  .section--journey {
+    font-family: "Azeret Mono", monospace;
+    background-color: #55ec80;
+    /*   position: relative;
   display: flex;
-  flex-direction: column;
-  width: 450px;
-  margin: 250px auto;
-  text-align: center;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
-}
+  min-height: 100vh; */
+  }
 
-.modal-inner h2 {
-  font-size: 2rem;
-  line-height: 2rem;
-}
+  /* .continue {
+  display: hide;
+  position: fixed;
+  bottom: 0;
+  left: 50px;
+  z-index: 700;
+} */
 
-.modal-btn {
-  margin-top: 20px;
-  padding: 10px 24px;
-  cursor: pointer;
-}
+  main {
+    overflow-x: hidden;
+    display: flex;
+    position: sticky;
+    top: 0;
+    margin-left: 40px;
+    gap: 96px;
+    z-index: 500;
+  }
 
-.close--modal {
-  margin-top: 20px;
-  padding: 10px 24px;
-  cursor: pointer;
-}
+  /*//////////*/
 
-.close--button {
-  position: absolute;
-  padding: 8px 11px;
-  text-transform: lowercase;
-  right: 8px;
-  top: 8px;
-  border: 1px solid whitesmoke;
-  color: whitesmoke;
-  background-color: transparent;
-  display: none;
-}
+  /*   .timeline--events {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    gap: 80px;
+    padding: 0 3rem 64px;
+  } */
 
-.close--button:hover {
-  background-color: transparent;
-  color: beige;
-  border: 1px solid beige;
+  .journey,
+  .continue {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .journey {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+  }
+
+  /* Project Styles */
+
+  .snap-container {
+    /* scroll-snap-type: y mandatory; */
+  }
+
+  .section--project {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section--header {
+    padding: 25px 60px 20px 50px;
+    border-bottom: 1px solid beige;
+    background-color: #f2fc08;
+    color: #df9504;
+  }
+
+  .header--title {
+    font-weight: 100;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  /* Contact Styles */
+
+  .section--contact {
+    background: var(--green);
+    /* background-color: var(--yellow); */
+    gap: 16px;
+    transition: all 4s;
+  }
+
+  .section--contact.active {
+    background: var(--yellow);
+    gap: 16px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: none;
+    color: black;
+  }
 }
