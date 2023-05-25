@@ -1,3 +1,80 @@
+/* Mobile journey styles */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  align-items: center;
+}
+
+.timelineImg {
+  width: 300px;
+  height: 300px;
+  margin: 10px auto 0;
+  border-radius: 100%;
+  background-image: url("/public/images/compu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  transition: all 2s;
+  cursor: none;
+  animation-name: background-pic;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background-pic {
+  0% {
+    background-image: url("/public/images/compu.jpg");
+  }
+
+  50% {
+    background-image: url("/public/images/tenis.jpg");
+  }
+
+  100% {
+    background-image: url("/public/images/compu.jpg");
+  }
+}
+
+.timelinePhotoTitle {
+  width: 75%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timelineItem {
+  max-width: 85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.timelineTitle {
+  font-family: "Azeret Mono", monospace;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 352px;
+}
+
+.timelineDescription {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 200;
+}
+
+.hiddenItem {
+  opacity: 0;
+}
+
+/* end mobile projects */
+
 .projectsHeader {
   text-transform: uppercase;
   padding: 2rem;

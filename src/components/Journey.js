@@ -150,8 +150,8 @@ function Journey() {
             in urban development was still hard; Soon I had to find ANY job to
             start paying the bills. I did customer support throught out this
             time, and during the pandemic I moderated content for TikTok. <br />
-            <br /> Throughout this time, I gained valuable and transferable soft
-            skills.
+            <br /> Throughout this time, I also gained valuable and transferable
+            soft skills.
           </div>
         </div>
         <div className={styles.timelineItem}>

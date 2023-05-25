@@ -12,6 +12,103 @@ function Projects() {
 
   return (
     <>
+      <div className="section--journey--mobile" id="about-mobile">
+        <div className={styles.main}>
+          <div className={styles.timelineItem}></div>
+          <div className={styles.timelineItem}>
+            <div
+              alt="Baby Ale with her first computer"
+              className={styles.timelineImg}
+            ></div>
+            <div className={styles.timelinePhotoTitle}>
+              My interest in technology & tennis started at a young age
+            </div>
+          </div>
+          <div className={styles.timelineItem}>
+            <div className={styles.timelineTitle}>
+              2007 Information Design bachelor
+            </div>
+            <div className={styles.timelineDescription}>
+              Graduated from UDLAP, Mexico. <br />
+              <br />
+              One of the highlights of my studies was going to Amsterdam for my
+              internship at GLU magazine. This was my first time in Europe, and
+              the design of the city made a big impression on me, this led me to
+              change my career path.
+            </div>
+          </div>
+          <div className={styles.timelineItem}>
+            <div className={styles.timelineTitle}>2008 Moved to Barcelona</div>
+            <div className={styles.timelineDescription}>
+              Joined the MA Urban Design: Art, City, Society at the Universitat
+              de Barcelona. <br />
+              <br />
+              At the same time I was working as a freelance designer, mostly
+              editorial, but also some web design.
+            </div>
+          </div>
+          <div className={styles.timelineItem}>
+            <div className={styles.timelineTitle}>
+              2010 Started coding webpages
+            </div>
+            <div className={styles.timelineDescription}>
+              Back from Spain, I attempted to get my foot in the planning
+              department of the city, however it was hard, partly because of the
+              politics of mexican bureocracy, and also because urban renewal was
+              still not in the political agenda. <br />
+              <br />
+              At this time, I started to code with the basics (HTML, CSS and
+              JS), and got a job at Gurú Brand Buro as a developer.
+            </div>
+          </div>
+          <div className={styles.timelineItem}>
+            <div className={styles.timelineTitle}>2012 Moved to the UK</div>
+            <div className={styles.timelineDescription}>
+              Still thinking about the design of the cities, I managed to get
+              government funding (CONACYT) to do a Science Masters in Urban
+              Regeneration at Sheffield Hallam University. <br />
+              <br /> I continued working remotly for Gurú for a little longer,
+              until the studies took all of my time.
+            </div>
+          </div>
+          <div className={styles.timelineItem}>
+            <div className={styles.timelineTitle}>2014-2022 Paid the bills</div>
+            <div className={styles.timelineDescription}>
+              After graduating from the MSc, I moved to London, and finding a
+              job in urban development was still hard; Soon I had to find ANY
+              job to start paying the bills. I did customer support throught out
+              this time, and during the pandemic I moderated content for TikTok.{" "}
+              <br />
+              <br /> Throughout this time, I gained valuable and transferable
+              soft skills.
+            </div>
+          </div>
+          <div className={styles.timelineItem}>
+            <div className={styles.timelineTitle}>2022 Moved to Stockholm</div>
+            <div className={styles.timelineDescription}>
+              I moved to Sweden following my partner & thanks to free education
+              in the country, I joined the Frontend Development program @ Hyper
+              Island to get myself back into coding.
+            </div>
+          </div>
+          <div className={styles.timelineItem}>
+            <div className={styles.timelineTitle}>2023</div>
+            <div className={styles.timelineDescription}>
+              I am now looking for an internship to finish my studies and to
+              start my professional career.
+            </div>
+          </div>
+
+          <div className={`${styles.timelineItem} ${styles.hiddenItem}`}>
+            <div className={styles.timelineTitle}>2023</div>
+            <div className={styles.timelineDescription}>
+              I am now looking for an internship to finish my studies and to
+              start my professional career.
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="snap-container hundredvh">
         <div className="section--project" id="projects">
           {/* <div className="section--header">

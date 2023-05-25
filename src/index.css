@@ -50,18 +50,8 @@ code {
     monospace;
 }
 
-nav ul li a:visited,
-a:focus {
-  text-decoration: none;
-  color: white;
-}
-
-nav ul li a.active {
-  color: black;
-}
-
-nav ul li a:hover {
-  color: black;
+nav {
+  display: none;
 }
 
 /* Sections -- this is used in Intro/Hello*/
@@ -84,7 +74,7 @@ nav ul li a:hover {
 
 .section--hello {
   background-color: var(--oat);
-  height: 100vh;
+  height: auto;
 }
 
 ul {
@@ -95,28 +85,21 @@ ul {
 
 p {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 /* Timeline Styles */
 
+.section--journey--mobile {
+  font-family: "Azeret Mono", monospace;
+  background-color: #55ec80;
+}
+
 .section--journey {
   font-family: "Azeret Mono", monospace;
   background-color: #55ec80;
-  /*   position: relative;
-display: flex;
-justify-content: center; 
-align-items: center;
-min-height: 100vh; */
+  display: none;
 }
-
-/* .continue {
-display: hide;
-position: fixed;
-bottom: 0;
-left: 50px;
-z-index: 700;
-} */
 
 main {
   overflow-x: hidden;
@@ -202,6 +185,10 @@ a:focus {
 }
 
 @media screen and (min-width: 568px) {
+  nav {
+    display: block;
+  }
+
   nav ul li a:visited,
   a:focus {
     text-decoration: none;
@@ -258,23 +245,17 @@ a:focus {
 
   /* Timeline Styles */
 
+  .section--journey--mobile {
+    font-family: "Azeret Mono", monospace;
+    background-color: #55ec80;
+    display: none;
+  }
+
   .section--journey {
     font-family: "Azeret Mono", monospace;
     background-color: #55ec80;
-    /*   position: relative;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  min-height: 100vh; */
+    display: block;
   }
-
-  /* .continue {
-  display: hide;
-  position: fixed;
-  bottom: 0;
-  left: 50px;
-  z-index: 700;
-} */
 
   main {
     overflow-x: hidden;
