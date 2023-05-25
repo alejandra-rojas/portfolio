@@ -1,0 +1,33 @@
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+  text-align: center;
+}
+
+.contactType {
+  margin-top: 18px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.contactDetail {
+  font-size: 24px;
+}
+
+.contactDetail a:link,
+.contactDetail a:visited {
+  color: black;
+}
+
+.name {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.name a:link,
+.name a:visited {
+  color: black;
+}

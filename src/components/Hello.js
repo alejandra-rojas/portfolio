@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Hello.module.css";
 
 function Hello() {
   const svgColor = "#2a0000";
@@ -8,8 +9,8 @@ function Hello() {
       className="hundredvh centered section--hello left-right header-offset"
       id="hello"
     >
-      <div className="intro">
-        <div className="IconContainer--Hello">
+      <div className={styles.intro}>
+        <div className={styles.IconContainer}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 128">
             <title>HTML</title>
             <path
@@ -97,8 +98,6 @@ function Hello() {
           tennis player.
         </p>
       </div>
-
-      <div className="stack"></div>
     </section>
   );
 }

@@ -25,6 +25,7 @@
   --oat: #edebdc;
   --orange: #ff4500;
   --blue: #0000ff;
+  --morado: #551a8b;
 }
 
 body {
@@ -56,21 +57,6 @@ code {
   scroll-snap-type: y mandatory;
   height: 100vh;
   width: 100%; */
-}
-
-/* Fixed Header */
-.header--static {
-  width: 100%;
-  padding: 5rem 6rem 0 6rem;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  color: white;
-  z-index: 900;
-}
-
-.nav-main {
 }
 
 nav ul li a:visited,
@@ -116,44 +102,15 @@ nav ul li a:hover {
   /* position: relative; */
 }
 
-.name {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
 ul {
   list-style: none;
   text-transform: uppercase;
   line-height: 1.5rem;
 }
 
-.intro {
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  color: var(--brown);
-}
-
 p {
   font-weight: 400;
   font-size: 32px;
-}
-
-.IconContainer--Hello {
-  display: flex;
-  align-items: center;
-  margin: auto 0 0;
-  padding-bottom: 16px;
-  /* position: absolute;
-  bottom: -200px; */
-}
-
-.IconContainer--Hello svg {
-  height: 2em;
-  width: auto;
-  margin-right: 1.25em;
 }
 
 /* Timeline Styles */
@@ -303,11 +260,6 @@ main {
   flex-direction: column;
 }
 
-.projects--header {
-  text-transform: uppercase;
-  padding: 7rem 6rem 4.5rem;
-}
-
 .section--header {
   padding: 25px 60px 20px 50px;
   border-bottom: 1px solid beige;
@@ -320,106 +272,6 @@ main {
   padding-bottom: 5px;
   text-transform: uppercase;
   font-size: 0.8rem;
-}
-
-.projects--grid {
-  padding: 0 30px 100px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  column-gap: 15px;
-}
-
-.top-container:hover {
-  z-index: 1000;
-}
-
-.project--card {
-  max-width: 25vw;
-  flex: 1;
-  padding: 20px;
-  position: relative;
-  border: #2a0000 1px solid;
-  padding: 8px;
-  cursor: pointer;
-  background-color: var(--oat);
-  opacity: 90%;
-  border-radius: 30px;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  z-index: 100;
-}
-
-.project--card:hover {
-  background-color: var(--oat);
-  opacity: 100%;
-}
-
-.project--card:hover .tooltiptext {
-  font-size: 10px;
-}
-
-.project--card:hover .project--stack {
-  display: none;
-}
-
-.project--img {
-  height: auto;
-  position: relative;
-  border: white 2px solid;
-}
-
-.project--img img {
-  width: 100%;
-  height: auto;
-}
-
-.gif--canvas {
-  width: 400px;
-}
-
-.project--data {
-  font-family: Inter;
-  color: black;
-  padding: 0 8px 16px;
-}
-
-.project--title {
-  font-weight: 600;
-  font-size: 1.2rem;
-  padding: 16px 0;
-}
-
-.project--description {
-  font-size: 1.1rem;
-}
-
-.project--links {
-  font-size: 0.8rem;
-  padding-top: 24px;
-}
-
-.project--stack {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 0.9rem;
-  background-color: var(--brown);
-  color: var(--whitish);
-  padding: 6px;
-  text-transform: uppercase;
-}
-
-.IconContainer {
-  display: flex;
-  margin: auto 0 0;
-}
-
-.IconContainer svg {
-  height: 1.3rem;
-  width: auto;
-  padding: 0 8px 0 0;
 }
 
 /* Contact Styles */
@@ -436,33 +288,12 @@ main {
   gap: 16px;
 }
 
-.contact--details {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  gap: 20px;
-  text-align: center;
-}
-
-.contact--type {
-  margin-top: 18px;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-.contact--detail {
-  font-size: 24px;
-}
-
 a {
   text-decoration: none;
 }
 
 a:link,
-a:visited {
-  color: white;
-}
-
+a:visited,
 a:hover,
 a:active,
 a:focus {
@@ -470,17 +301,8 @@ a:focus {
   color: black;
 }
 
-.show a:link,
-.contact--detail a:link,
-.contact--detail a:visited,
-.name a:link,
-.name a:visited {
+.show a:link {
   color: black;
-}
-
-.project--links a:link {
-  color: black;
-  text-decoration: underline;
 }
 
 /* Modal */
@@ -543,32 +365,4 @@ a:focus {
   background-color: transparent;
   color: beige;
   border: 1px solid beige;
-}
-
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  /* If you want dots under the hoverable text */
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 80%;
-  background-color: var(--brown);
-  color: whitesmoke;
-  text-align: center;
-  padding: 8px;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-  right: 0;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }

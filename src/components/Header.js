@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import styles from "./Header.module.css";
 
 function Header() {
   const [currentSection, setCurrentSection] = useState("");
@@ -27,8 +28,8 @@ function Header() {
   }, []);
 
   return (
-    <div className="header--static">
-      <div className="name">
+    <div className={styles.headerStatic}>
+      <div className={styles.name}>
         <a href="#hello" role="menuitem">
           ALEJANDRA ROJAS
         </a>

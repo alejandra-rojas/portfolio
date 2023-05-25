@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import styles from "./Contact.module.css";
 
 function Contact() {
   const [background, setBackground] = useState(false);
@@ -25,17 +26,17 @@ function Contact() {
           background ? "active" : ""
         } hundredvh centered left-right`}
       >
-        <div className="contact--details">
-          <div className="contact--type">get in touch</div>
+        <div className={styles.contactDetails}>
+          <div className={styles.contactType}>get in touch</div>
           <div>
-            <div className="contact--detail">
+            <div className={styles.contactDetail}>
               <a href="mailto:alejandra.rojas@hyperisland.se">
                 alejandra.rojas@hyperisland.se
               </a>
             </div>
           </div>
           <div>
-            <div className="contact--detail">
+            <div className={styles.contactDetail}>
               <a
                 href="https://www.linkedin.com/in/alerojasmal/"
                 target="_blank"
@@ -45,7 +46,7 @@ function Contact() {
               </a>
             </div>
           </div>
-          <div className="contact--type"></div>
+          <div className={styles.contactType}></div>
         </div>
       </section>
     </div>

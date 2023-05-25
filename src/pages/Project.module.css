@@ -1,0 +1,40 @@
+.name {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.name a:link,
+.name a:visited {
+  color: black;
+}
+
+.projectBody {
+  width: 100%;
+  padding: 5rem 6rem;
+}
+
+.header {
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.projectLinks {
+  font-size: 0.8rem;
+  padding-top: 24px;
+}
+
+.projectLinks a:link,
+.projectLinks a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+.back {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: black;
+}

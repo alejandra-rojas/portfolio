@@ -1,0 +1,22 @@
+.IconContainer {
+  display: flex;
+  align-items: center;
+  margin: auto 0 0;
+  padding-bottom: 16px;
+  /* position: absolute;
+    bottom: -200px; */
+}
+
+.IconContainer svg {
+  height: 2em;
+  width: auto;
+  margin-right: 1.25em;
+}
+
+.intro {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--brown);
+}
