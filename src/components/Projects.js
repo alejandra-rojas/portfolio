@@ -94,16 +94,16 @@ function Projects() {
           <div className={styles.timelineItem}>
             <div className={styles.timelineTitle}>2023</div>
             <div className={styles.timelineDescription}>
-              I am now looking for an internship to finish my studies and to
-              start my professional career.
+              I am now looking for an internship to finish my frontend developer
+              program and to start my professional career.
             </div>
           </div>
 
           <div className={`${styles.timelineItem} ${styles.hiddenItem}`}>
             <div className={styles.timelineTitle}>2023</div>
             <div className={styles.timelineDescription}>
-              I am now looking for an internship to finish my studies and to
-              start my professional career.
+              I am now looking for an internship to finish my frontend developer
+              program and to start my professional career.
             </div>
           </div>
         </div>
@@ -111,11 +111,9 @@ function Projects() {
 
       <div className="snap-container hundredvh">
         <div className="section--project" id="projects">
-          {/* <div className="section--header">
-        <div className="header--title">
-          some of the Projects I have been working on
-        </div>
-      </div> */}
+          <div className="section--header">
+            <div className="header--title">featured projects & excercices</div>
+          </div>
           <div className={styles.projectsHeader}></div>
 
           <div className={styles.projectsGrid}>
@@ -134,7 +132,7 @@ function Projects() {
                     // onClick={() => setShowModal(true)}
                   >
                     <span className={styles.tooltiptext}>
-                      Click to learn more
+                      Featured project <br /> click for details
                     </span>
                     <div className={styles.projectImg}>
                       <img
@@ -199,9 +197,7 @@ function Projects() {
             </div>
 
             <div className={`${styles.projectCard} ${styles.tooltip}`}>
-              <span className={styles.tooltiptext}>
-                will improve this project and will add modal then
-              </span>
+              <span className={styles.tooltiptext}>Class excercise</span>
               <div className={styles.projectImg}>
                 <img
                   src="../assets/quoted.png"
@@ -209,12 +205,12 @@ function Projects() {
                 />
               </div>
               <div className={styles.projectData}>
-                <div className={styles.projectTitle}>
-                  A random quote styled with a random google font
-                </div>
+                <div className={styles.projectTitle}>APIS</div>
                 <div className={styles.projectDescription}>
-                  Excercise accessing two open APIs, extracting relevant data
-                  and visualizing it.
+                  Class excercise in which we needed to access an open API,
+                  extracting relevant data and visualize it. In my project, I
+                  load a random anime quote which is styled with a random font
+                  from the Google API.
                 </div>
                 <div className="project--links">
                   <a href="https://random-apis.netlify.app/" target="_blank">
@@ -250,9 +246,7 @@ function Projects() {
             </div>
 
             <div className={`${styles.projectCard} ${styles.tooltip}`}>
-              <span className={styles.tooltiptext}>
-                will improve this project and will add modal then
-              </span>
+              <span className={styles.tooltiptext}>Class project</span>
               <div className={styles.projectImg}>
                 <img
                   src="../assets/quiz.png"

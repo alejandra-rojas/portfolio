@@ -165,8 +165,8 @@ function Journey() {
         <div className={styles.timelineItem}>
           <div className={styles.timelineTitle}>2023</div>
           <div className={styles.timelineDescription}>
-            I am now looking for an internship to finish my studies and to start
-            my professional career.
+            I am now looking for an internship to finish my frontend developer
+            program and to start my professional career.
           </div>
         </div>
 

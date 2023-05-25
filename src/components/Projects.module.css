@@ -98,7 +98,7 @@
   flex: 1;
   position: relative;
   border: #2a0000 1px solid;
-  cursor: pointer;
+
   background-color: var(--oat);
   opacity: 90%;
   border-radius: 24px;
@@ -113,7 +113,7 @@
 }
 
 .projectCard:hover .tooltiptext {
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .projectCard:hover .project--stack {
@@ -187,7 +187,7 @@
   color: whitesmoke;
   text-align: center;
 
-  padding: 8px;
+  padding: 10px;
 
   /* Position the tooltip */
   position: absolute;
@@ -226,7 +226,6 @@
     flex: 1;
     position: relative;
     border: #2a0000 1px solid;
-    cursor: pointer;
     background-color: var(--oat);
     opacity: 90%;
     border-radius: 24px;
