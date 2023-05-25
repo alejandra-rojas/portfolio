@@ -1,3 +1,11 @@
+.projectBody {
+  width: 100%;
+  padding: 2rem;
+}
+.header {
+  display: none;
+}
+
 .name {
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -9,32 +17,192 @@
   color: black;
 }
 
-.projectBody {
-  width: 100%;
-  padding: 5rem 6rem;
+.back {
+  cursor: pointer;
 }
 
-.header {
-  padding-bottom: 6rem;
+.back a:link,
+.back a:visited {
+  color: black;
+}
+
+h1 {
+  font-size: 1.7rem;
+  padding: 40px 0 20px;
+}
+
+.projectData {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  color: white;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+  margin-left: 0.5rem;
+  padding: 1rem 0 0;
+}
+.projectStack {
+  display: flex;
+
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 
 .projectLinks {
-  font-size: 0.8rem;
-  padding-top: 24px;
+  font-size: 1rem;
 }
 
-.projectLinks a:link,
-.projectLinks a:visited {
-  color: black;
-  text-decoration: underline;
+h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 140%;
+  width: 88%;
+  max-width: 880px;
+  margin: 2rem 0 0;
 }
 
-.back {
-  text-transform: uppercase;
-  cursor: pointer;
-  color: black;
+.iconContainer {
+  display: flex;
+  margin: auto 0 0;
+}
+
+.iconContainer svg {
+  height: 1.8rem;
+  width: auto;
+  padding: 0 8px 0 0;
+}
+
+.footer {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.description {
+  width: 80%;
+  max-width: 715px;
+  margin-top: 2rem;
+  line-height: 140%;
+}
+
+.description img {
+  max-width: 90%;
+  margin-top: 2rem;
+}
+
+.caption {
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+.doublePics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.doublePics img {
+  max-width: 90%;
+}
+
+@media screen and (min-width: 568px) {
+  .projectBody {
+    width: 100%;
+    padding: 5rem 6rem;
+  }
+
+  .header {
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .name {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .name a:link,
+  .name a:visited {
+    color: black;
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding: 40px 0 20px;
+  }
+
+  .projectData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0.5rem;
+    padding: 1rem 0 0;
+  }
+  .projectStack {
+    display: flex;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+
+  .projectLinks {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 140%;
+    width: 88%;
+    max-width: 880px;
+    margin: 2rem 0 0;
+  }
+
+  .iconContainer {
+    display: flex;
+    margin: auto 0 0;
+  }
+
+  .iconContainer svg {
+    height: 1.8rem;
+    width: auto;
+    padding: 0 8px 0 0;
+  }
+
+  .description {
+    width: 80%;
+    max-width: 715px;
+    margin-top: 2rem;
+    line-height: 140%;
+  }
+
+  .description img {
+    width: 400px;
+    margin-top: 2rem;
+  }
+
+  .caption {
+    margin-top: 4px;
+    font-size: 0.9rem;
+  }
+
+  .doublePics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .doublePics img {
+    width: 420px;
+  }
+
+  .footer {
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
