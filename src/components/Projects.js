@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import ProjectModal from "./ProjectModal";
 import styles from "./Projects.module.css";
@@ -9,6 +9,12 @@ function Projects() {
   const svgColor = "#F1EFE9";
   const [showModal, setShowModal] = useState(false);
   const [onTop, setOnTop] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <>
@@ -110,7 +116,7 @@ function Projects() {
       </div>
 
       <div className="snap-container hundredvh">
-        <div className="section--project" id="projects">
+        <div className="section--project" id="mobile-projects">
           <div className="section--header">
             <div className="header--title">featured projects & excercices</div>
           </div>

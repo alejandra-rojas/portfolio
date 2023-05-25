@@ -1,8 +1,16 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import styles from "./Project.module.css";
 
 function Planet() {
   const svgColor = "#2a0000";
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -10,7 +18,17 @@ function Planet() {
     setTimeout(() => {
       const element = document.getElementById("projects");
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: "auto" });
+      }
+    }, 0);
+  };
+
+  const handleMobileClick = () => {
+    navigate("/");
+    setTimeout(() => {
+      const element = document.getElementById("mobile-projects");
+      if (element) {
+        element.scrollIntoView({ behavior: "auto" });
       }
     }, 0);
   };
@@ -26,6 +44,9 @@ function Planet() {
       </div>
       <div>
         <div className={styles.back} onClick={handleClick}>
+          BACK TO PROJECTS
+        </div>
+        <div className={styles.backMobile} onClick={handleMobileClick}>
           BACK TO PROJECTS
         </div>
         <h1>The planet is your canvas</h1>

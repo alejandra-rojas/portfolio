@@ -19,8 +19,15 @@
 
 .back {
   cursor: pointer;
+  display: none;
 }
 
+.backMobile {
+  cursor: pointer;
+}
+
+.backMobile a:link,
+.backMobile a:visited,
 .back a:link,
 .back a:visited {
   color: black;
@@ -109,6 +116,16 @@ h2 {
   .projectBody {
     width: 100%;
     padding: 5rem 6rem;
+  }
+
+  .back {
+    cursor: pointer;
+    display: block;
+  }
+
+  .backMobile {
+    cursor: pointer;
+    display: none;
   }
 
   .header {
