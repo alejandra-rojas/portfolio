@@ -20,6 +20,7 @@ function Projects() {
     <>
       <div className="section--journey--mobile" id="about-mobile">
         <div className={styles.main}>
+          <div className={styles.title}>About me</div>
           <div className={styles.timelineItem}></div>
           <div className={styles.timelineItem}>
             <div
