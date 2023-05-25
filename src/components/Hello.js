@@ -63,18 +63,38 @@ function Hello() {
               fill={svgColor}
             />
           </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.29 113.28">
+            <title>Tennis (L3) & Certified Coach L1 (LTA)</title>
+            <path
+              class="cls-1"
+              fill={svgColor}
+              d="M100.25,73.7c-4.83-.89-9.76-3.06-13.53-5.96-.49-.37-1.62-1.3-2.2-1.89-9.34-8.8-12.04-21.01-14.65-32.82-2.52-11.42-5.13-23.23-13.83-31.93-.31-.31-.55-.7-.7-1.1-14.07,.32-28.04,5.84-38.78,16.58C5.84,27.31,.32,41.28,0,55.35c.41,.15,.79,.38,1.11,.7,8.7,8.7,20.51,11.31,31.93,13.83,11.81,2.6,24.02,5.29,32.86,14.67,.43,.44,1.57,1.8,1.87,2.19,2.88,3.75,5.05,8.68,5.95,13.51,.74,4.01,.56,7.61-.52,10.57,8.61-2.62,16.71-7.33,23.51-14.13,6.81-6.8,11.51-14.91,14.13-23.51-2.97,1.07-6.56,1.25-10.57,.51Z"
+            />
+            <path
+              class="cls-1"
+              fill={svgColor}
+              d="M66.11,111.11c4.06-4.06,1.55-14.71-3.22-20.82-.54-.7-.83-1.05-1.66-1.89-7.54-7.8-18.2-10.15-29.49-12.64-10.84-2.4-22.01-4.87-31.34-12.3,1.47,12.15,6.86,23.91,16.18,33.23,13.28,13.27,31.49,18.57,48.72,15.93,.12-.56,.39-1.09,.81-1.51Z"
+            />
+            <path
+              class="cls-1"
+              fill={svgColor}
+              d="M63.47,.39c7.42,9.32,9.9,20.5,12.29,31.34,2.5,11.29,4.85,21.94,12.62,29.48l.04,.04c.34,.35,.78,.72,1.21,1.08,.24,.2,.47,.39,.68,.59,6.12,4.76,16.74,7.24,20.79,3.19,.42-.41,.94-.69,1.51-.81,2.65-17.24-2.66-35.45-15.93-48.72C87.38,7.26,75.61,1.86,63.47,.39Z"
+            />
+          </svg>
         </div>
         <p>
-          Hello! I'm a frontend developer with a strong design background,
-          looking for an internship where I can continue my development.
+          Hello! I'm a frontend developer student with a strong design
+          background, looking for an internship where I can continue my
+          development.
           <br />
           <br />
         </p>
 
         <p>
           I like building React apps, working with components and design
-          systems. In my free time I like travelling, and I am a very
-          competitive tennis player.
+          systems. In my free time I like travelling and I'm a very competitive
+          tennis player.
         </p>
       </div>
 

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 function Journey() {
   const [isAboutSectionInView, setIsAboutSectionInView] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const aboutSection = document.querySelector("main");
@@ -103,8 +104,8 @@ function Journey() {
             <br />
             One of the highlights of my studies was going to Amsterdam for my
             internship at GLU magazine. This was my first time in Europe, and
-            the design of the city made a big impression on me, this later led
-            me to change the course of my career.
+            the design of the city made a big impression on me, this led me to
+            change my career path.
           </div>
         </div>
         <div className="timeline--item">
@@ -142,19 +143,20 @@ function Journey() {
         <div className="timeline--item">
           <div className="timeline--title">2014-2022 Paid the bills</div>
           <div className="timeline--description">
-            After graduating from the MSc, I moved to London, finding a job in
-            urban development was still hard. Soon I had to find ANY job to
-            start paying the bills. I did mostly customer support throught out
-            this time, and during the pandemic I was moderating content for
-            TikTok.
+            After graduating from the MSc, I moved to London, and finding a job
+            in urban development was still hard; Soon I had to find ANY job to
+            start paying the bills. I did customer support throught out this
+            time, and during the pandemic I moderated content for TikTok. <br />
+            <br /> Throughout this time, I gained valuable and transferable soft
+            skills.
           </div>
         </div>
         <div className="timeline--item">
           <div className="timeline--title">2022 Moved to Stockholm</div>
           <div className="timeline--description">
             I moved to Sweden following my partner & thanks to free education in
-            the country, I enrolled myself in the Frontend Development program @
-            Hyper Island to get myself back into coding.
+            the country, I joined the Frontend Development program @ Hyper
+            Island to get myself back into coding.
           </div>
         </div>
         <div className="timeline--item">

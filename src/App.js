@@ -7,7 +7,7 @@ import ProjectModal from "./components/ProjectModal";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Header />
       <Hello />
       <Journey />
