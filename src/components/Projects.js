@@ -127,12 +127,26 @@ function Projects() {
             <div className={styles.topContainer}>
               <Link to="/projects/theplanetisyourcanvas">
                 <motion.div
-                  whileHover={{ scale: 1.3 }}
+                  whileHover={{ scale: 1.2 }}
                   onMouseEnter={() => {
                     setOnTop(!onTop);
                   }}
-                  whileTap={{ scale: 1.2 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  whileInView={{
+                    scale: [1, 1.03, 1, 1.03, 1],
+                  }}
+                  transition={{
+                    scale: {
+                      duration: 0.7,
+                      repeat: Infinity,
+                      repeatDelay: 7,
+                    },
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 17,
+                  }}
+                  initial={{ rotate: 0 }}
+                  // whileTap={{ scale: 1.1 }}
+                  // transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
                   <div
                     className={`${styles.projectCard} ${styles.tooltip}`}
@@ -161,7 +175,17 @@ function Projects() {
                         This is my first real client project, since getting back
                         to coding. The webpage was built with React and used
                         Firebase Database & Authentication to register users and
-                        their votes.
+                        their votes.{" "}
+                        <span
+                          style={{
+                            color: "#2a0000",
+                            textDecoration: "underline",
+                          }}
+                        >
+                          {" "}
+                          Click the card to know more
+                        </span>
+                        .
                       </div>
                     </div>
                     <div className={styles.projectStack}>
