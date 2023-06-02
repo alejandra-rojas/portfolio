@@ -127,7 +127,7 @@ function Projects() {
             <div className={styles.topContainer}>
               <Link to="/projects/theplanetisyourcanvas">
                 <motion.div
-                  whileHover={{ scale: 1.2 }}
+                  whileHover={{ scale: 1.15 }}
                   onMouseEnter={() => {
                     setOnTop(!onTop);
                   }}
