@@ -96,12 +96,21 @@ h2 {
   margin-top: 2rem;
 }
 
+.syntax {
+  width: fit-content;
+  padding: 1.5rem !important;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+
 .caption {
   margin-top: 4px;
   font-size: 0.9rem;
 }
 
 .doublePics {
+  font-size: 0.8rem;
+
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;

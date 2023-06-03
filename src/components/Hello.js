@@ -84,18 +84,18 @@ function Hello() {
             />
           </svg>
         </div>
+        <p>Hello! I'm a frontend developer looking for an internship.</p>{" "}
         <p>
-          Hello! I'm a frontend developer student with a strong design
-          background, looking for an internship where I can continue my
-          development.
-          <br />
-          <br />
+          I have a solid HTML, CSS and JS foundation, and enjoy working with
+          React. Through my design background I've developed an eye for detail,
+          and I enjoy working with design systems, user interfaces and all the
+          little details of the frontend. In the near future, I intend to learn
+          more about accesibility, performance and SEO. Right now, I am enjoying
+          dipping my toes in the world of WebGL and Three.js.
         </p>
-
         <p>
-          I like building React apps, working with components and design
-          systems. In my free time I like travelling and I'm a very competitive
-          tennis player.
+          Apart from coding, I like playing tennis, eating spicy food and
+          travelling.
         </p>
       </div>
     </section>

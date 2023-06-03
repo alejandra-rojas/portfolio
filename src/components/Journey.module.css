@@ -74,7 +74,7 @@
   .timelineImg {
     width: 300px;
     height: 300px;
-    margin-top: -50px;
+    margin-top: 0px;
     border-radius: 100%;
     background-image: url("/public/images/compu.jpg");
     background-repeat: no-repeat;
@@ -104,7 +104,8 @@
   .timelinePhotoTitle {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 15px;
+    line-height: 19px;
     margin: 0 auto;
     text-align: center;
   }
@@ -117,7 +118,18 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 16px;
-    padding-top: 35vh;
+    padding-top: 31vh;
+    pointer-events: none;
+  }
+
+  .timelineItem:first-child {
+    width: fit-content;
+    margin-left: 20vw;
+    margin-right: 3vw;
+  }
+
+  .timelineItem:last-child {
+    margin-right: 30vw;
   }
 
   .timelineTitle {
@@ -131,7 +143,7 @@
   .timelineDescription {
     width: 430px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     font-weight: 200;
   }
 
@@ -144,9 +156,12 @@
     display: block;
     z-index: 700;
     left: 10px;
+    cursor: pointer;
   }
 
   .cvNext a:link {
     color: black;
+    text-decoration: underline solid 1px;
+    cursor: pointer;
   }
 }

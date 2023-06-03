@@ -1,6 +1,37 @@
+import SyntaxHighlighter from "react-syntax-highlighter";
+import {
+  a11yDark,
+  anOldHope,
+  docco,
+} from "react-syntax-highlighter/dist/esm/styles/hljs";
+
 import { useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import styles from "./Project.module.css";
+
+const onSnapshot = ` useEffect(() => {
+  const ilustracionRef = collection(db, "ilustracion");
+  const q = query(ilustracionRef);
+  onSnapshot(q, (snapshot) => {
+    const ilustraciones = snapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    setIlustraciones(ilustraciones);
+  });
+}, []) `;
+
+const querySnapshot = ` useEffect(() => {
+  const ilustracionRef = collection(db, "ilustracion");
+  const q = query(ilustracionRef);
+  getDocs(q).then((querySnapshot) => {
+    const ilustraciones = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    setIlustraciones(ilustraciones);
+  });
+}, []);`;
 
 function Planet() {
   const svgColor = "#2a0000";
@@ -103,11 +134,13 @@ function Planet() {
 
         <h2>
           The objective of the project was to create a website for an art
-          contest. First, the webpage provided information and resources, along
-          with a form for participants to submit their entries to the contest.
-          Later on, the website displayed the finalists and allowed the public
-          to register and vote for their favorites to select the winners. My
-          learnings and struggles this project are presented here.
+          contest. The webpage had three stages. First, the webpage provided
+          information and resources, along with a form for participants to
+          submit their entries to the contest. Later on, the website displayed
+          the finalists and allowed the public to register and vote for their
+          favorites to select the winners. Lastly, the voting widget was removed
+          and the winners were displayed, My learnings and struggles this
+          project are presented here.
         </h2>
 
         <div className={styles.description}>
@@ -131,6 +164,13 @@ function Planet() {
           necessary icons and images for web implementation. For this phase, I
           used HTML, CSS, and JavaScript to develop the webpage. It was only in
           the second phase that I refactored the code into a React app. <br />
+          <div className={styles.projectImg}>
+            <img
+              src="../assets/Planet2.png"
+              alt="Screenshot of the Planet is your canvas"
+              className={styles.gifCanvas}
+            />
+          </div>
           <br />
           In school, I had a glimpse of Firebase as a convenient data storage
           solution. So, when considering the voting widget, I focused on
@@ -151,6 +191,13 @@ function Planet() {
           animation where the thumbs-up icon would move up and change colour, to
           give visual feedback that their vote was submitted. <br />
           <br />
+          <div className={styles.projectImg}>
+            <img
+              src="../assets/Canvas.gif"
+              alt="Screenshot of the Planet is your canvas"
+              className={styles.gifCanvas}
+            />
+          </div>
           The second stage of the webpage, the voting stage, would last for 10
           days. The same day it went live, I noticed a significant increase in
           database reads, and it looked like Firebase's free daily limit of 50K
@@ -181,44 +228,42 @@ function Planet() {
           research, I refactored the code and replaced onSnapshot() method with
           the getDocs() method. <br />
           <br />
-          <div className={styles.doublePics}>
-            <div>
-              <img
-                src="../images/project-planet/onSnapshot.png"
-                alt="screenshot of the on snapshot code"
-              />
-              <div className={styles.caption}>onSnapshot code</div>
-            </div>
-            <div>
-              <img
-                src="../images/project-planet/getDocs.png"
-                alt="screenshot of the refactored code"
-              />
-              <div className={styles.caption}>
-                Refactored code to reduce database views
-              </div>
-            </div>
+          <SyntaxHighlighter
+            className={styles.syntax}
+            language="javascript"
+            style={anOldHope}
+            wrapLongLines
+          >
+            {onSnapshot}
+          </SyntaxHighlighter>
+          <div className={styles.caption}>onSnapshot code</div>
+          <SyntaxHighlighter
+            className={styles.syntax}
+            language="javascript"
+            style={anOldHope}
+          >
+            {querySnapshot}
+          </SyntaxHighlighter>
+          <div className={styles.caption}>
+            Refactored code to reduce database views
           </div>
           The code refactoring came with a trade-off in the UX, as the user no
           longer received immediate feedback upon submitting their vote, and
           updates to the vote counter could only be seen by refreshing the
-          browser. To enhance the user experience, I implemented a success
-          notification that informed users their vote had been successfully
-          submitted. Furthermore, I provided instructions that refreshing the
-          page would display their applied vote. By midday the following day, I
-          deployed the refactored code, resulting in a significant decrease in
-          database reads. Fortunately, I did not encounter the need to disable
-          the widget for the remaining duration of the voting stage.
+          browser. To address this I implemented a success notification and
+          adviced refreshing the page to see their vote applied . By midday the
+          following day, I deployed the refactored code, resulting in a
+          significant decrease in database reads. Fortunately, I did not
+          encounter the need to disable the widget for the remaining duration of
+          the voting stage.
           <br />
           <br />I was open and transparent regarding the challenges I faced
-          while deploying the voting widget. When the client was informed about
-          the situation on Monday, they weren’t concerned as all the issues were
-          resolved and the disruption was minimal. Overall, the client was very
-          satisfied with the project's outcome, and I personally gained
-          invaluable learning experiences from the process. Reflecting on this
-          experience, I believe that for future projects of a similar nature, I
-          will explore the implementation of a different kind of database for
-          the solution.
+          while deploying the voting widget, and the client was not bothered as
+          all the issues were resolved and the disruption was minimal. Overall,
+          the client was very satisfied with the project's outcome, and I
+          personally gained invaluable learning experiences from the process,
+          reminding me that I enjoy working with code, and that I am able to
+          hanlde pressure.
         </div>
       </div>
       <div className={styles.footer}>

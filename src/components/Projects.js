@@ -157,9 +157,8 @@ function Projects() {
                     </span>
                     <div className={styles.projectImg}>
                       <img
-                        src="../assets/Canvas.gif"
-                        alt="Gif showing the vote"
-                        className={styles.gifCanvas}
+                        src="../assets/Planet.png"
+                        alt="Screenshot of the Planet is your canvas"
                       />
                     </div>
 
@@ -175,17 +174,7 @@ function Projects() {
                         This is my first real client project, since getting back
                         to coding. The webpage was built with React and used
                         Firebase Database & Authentication to register users and
-                        their votes.{" "}
-                        <span
-                          style={{
-                            color: "#2a0000",
-                            textDecoration: "underline",
-                          }}
-                        >
-                          {" "}
-                          Click the card to know more
-                        </span>
-                        .
+                        their votes.
                       </div>
                     </div>
                     <div className={styles.projectStack}>

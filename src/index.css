@@ -85,7 +85,8 @@ ul {
 
 p {
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.2em;
+  line-height: 2em;
 }
 
 /* Timeline Styles */
@@ -241,7 +242,9 @@ a:focus {
 
   p {
     font-weight: 400;
-    font-size: 32px;
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-bottom: 8px;
   }
 
   /* Timeline Styles */
@@ -263,7 +266,7 @@ a:focus {
     display: flex;
     position: sticky;
     top: 0;
-    margin-left: 40px;
+    margin-left: 5vw;
     gap: 96px;
     z-index: 500;
   }
