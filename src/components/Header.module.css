@@ -45,4 +45,8 @@
   .name a:visited {
     color: black;
   }
+
+  .navMain {
+    pointer-events: none;
+  }
 }

@@ -102,8 +102,12 @@ function Hello() {
         </p>
       </div>
 
-      {/* <div className={styles.scrolldown}>Scroll Down</div> */}
-      <div class={`${styles.arrow} ${styles.animated} ${styles.bounce}`}></div>
+      {/* <div class={`${styles.arrow} ${styles.animated} ${styles.bounce}`}></div> */}
+      <div class={styles.scrollDowns}>
+        <div class={styles.mousey}>
+          <div class={styles.scroller}></div>
+        </div>
+      </div>
     </section>
   );
 }
