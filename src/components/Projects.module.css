@@ -212,9 +212,7 @@
   background-color: var(--brown);
   color: whitesmoke;
   text-align: center;
-
   padding: 10px;
-
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
@@ -226,6 +224,12 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
   font-size: 1rem;
+}
+
+.projectLinks {
+  font-size: 0.9rem;
+  padding-top: 12px;
+  text-decoration: underline 1px black;
 }
 
 @media screen and (min-width: 568px) {
@@ -292,7 +296,7 @@
   .projectData {
     font-family: Inter;
     color: black;
-    padding: 16px 16px 24px;
+    padding: 16px 16px 20px;
   }
 
   .projectTitle {
