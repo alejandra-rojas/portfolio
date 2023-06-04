@@ -378,7 +378,7 @@ function Projects() {
                   with variants. Page in progress.
                 </div>
                 <div className={styles.projectLinks}>
-                  <a href="https://random-apis.netlify.app/" target="_blank">
+                  <a href="https://framer.netlify.app/" target="_blank">
                     Deployed website
                   </a>
                   {/* &nbsp;|&nbsp; */}
