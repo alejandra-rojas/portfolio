@@ -108,15 +108,15 @@ function Journey() {
           <div className={styles.timelineDescription}>
             Graduated from UDLAP, Mexico. <br />
             <br />
-            I specialized in editorial design and worked for various clients,
-            but I also launched my own quarterly newspaper to promote art and
-            culture in Puebla, Mexico.
+            I specialized in editorial design and worked for various clients, I
+            also launched my own quarterly newspaper to promote art and culture
+            in Puebla, MX.
             <br />
             <br />
             One of the highlights of my studies was going to Amsterdam for my
             internship at GLU magazine. This was my first time in Europe, and
-            the design of the city made a big impression on me, which led me to
-            try and change career paths.
+            the design of the city made a big impression on me, which sparked an
+            interest in Urban Design.
           </div>
         </div>
         <div className={styles.timelineItem}>
@@ -134,13 +134,12 @@ function Journey() {
             2010 Started coding webpages
           </div>
           <div className={styles.timelineDescription}>
-            Back from Spain, I attempted to get my foot in the planning
-            department of the city, however it was hard, partly because of how
-            politics are in Mexico, and also because urban renewal was still not
-            in the political agenda. <br />
+            Back in Mexico, it became clear that urban renewal was still not in
+            the political agenda, and therefore a difficult field to work in.{" "}
             <br />
-            At this time, I started to code with HTML, CSS and some JS, and got
-            a job at Gurú Brand Buro as a web developer.
+            <br />
+            At this time, I taught myself a bit of HTML, CSS and some JS, and
+            got a job at Gurú Brand Buro as a web developer.
           </div>
         </div>
         <div className={styles.timelineItem}>
@@ -151,38 +150,44 @@ function Journey() {
             Science Masters in Urban Regeneration at Sheffield Hallam
             University. <br />
             <br /> I continued working remotly for Gurú for a little longer,
-            until the masters took all of my time.
+            until the masters took over all of my time.
           </div>
         </div>
         <div className={styles.timelineItem}>
-          <div className={styles.timelineTitle}>2014-2022 Paid the bills</div>
+          <div className={styles.timelineTitle}>Paid the bills</div>
           <div className={styles.timelineDescription}>
-            After graduating from the MSc, I moved to London, and finding a job
-            in urban development was still hard. Soon I had to find any job to
+            After graduating from the MSc, I moved to London, but finding a job
+            in urban development was difficult. Soon I had to find any job to
             start paying the bills. I did customer support in various levels,
             got a certification to teach tennis, and moderated content for
             TikTok. <br />
-            <br /> During this time, I gained valuable and transferable soft
-            skills.
+            <br /> During this time I worked both in small and big teams, and
+            gained valuable and versatile soft skills. By paying close attention
+            to detail and maintaining effective communication with a diverse
+            range of stakeholders, I successfully resolved numerous challenges.
           </div>
         </div>
         <div className={styles.timelineItem}>
           <div className={styles.timelineTitle}>2022 Moved to Stockholm</div>
           <div className={styles.timelineDescription}>
             I moved to Sweden following my partner & thanks to free education in
-            the country, I joined the Frontend Development program @ Hyper
+            the country, I joined the Frontend Development program at Hyper
             Island to get myself back into coding.
           </div>
         </div>
         <div className={styles.timelineItem}>
           <div className={styles.timelineTitle}>2023</div>
           <div className={styles.timelineDescription}>
-            I am now looking for an internship to finish my frontend developer
-            program and to start my professional career. <br />
-            <br /> Ideally, I would like to be an intern in a company that
-            offers a supportive and nurturing environment. I want to learn from
-            more experienced devs, explore new things, and would also appreciate
-            having space to explore my current interests.
+            <span className={styles.boldDescription}>
+              I am now looking for an internship to finish my frontend developer
+              program and get my foot in the industry.
+              <br />
+              <br /> I hope to be an intern in a company that offers a
+              supportive and nurturing environment. I want to learn from more
+              experienced developers, explore new things and solidify my
+              knowledge. With my skill set, ambition and ability to learn, I
+              hope to be a positive contribution to the team.
+            </span>
           </div>
         </div>
         {/*         <div className={`${styles.timelineItem} ${styles.hiddenItem}`}>

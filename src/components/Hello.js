@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Hello.module.css";
+import { motion as m } from "framer-motion";
+import { container, item } from "./framerAnimation";
 
 function Hello() {
   const svgColor = "#2a0000";
@@ -84,13 +86,14 @@ function Hello() {
             />
           </svg>
         </div>
-        <p>Hello! I'm a frontend developer looking for an internship.</p>{" "}
+        <p>Hello! I'm a frontend developer looking for an internship.</p>
         <p>
-          I have a solid HTML, CSS and JS foundation, and enjoy working with
-          React. Through my design background I've developed an eye for detail,
-          and I enjoy working with design systems, user interfaces and all the
-          little details of the frontend. In the near future, I intend to learn
-          more about accesibility, performance and SEO. Right now, I am enjoying
+          I have a solid HTML, CSS and JS foundation. For now, my framework of
+          choice is React, but I'm always open to explore other tools. Through
+          my design background I've developed an eye for detail, and I enjoy
+          working with design systems, user interfaces and all the little
+          details of the frontend. In the near future, I intend to learn more
+          about accesibility, performance and SEO. Right now, I'm enjoying
           dipping my toes in the world of WebGL and Three.js.
         </p>
         <p>

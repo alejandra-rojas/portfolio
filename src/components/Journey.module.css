@@ -62,6 +62,10 @@
   font-weight: 200;
 }
 
+.boldDescription {
+  font-weight: 500;
+}
+
 .hiddenItem {
   opacity: 0;
 }
