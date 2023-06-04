@@ -125,8 +125,8 @@ function Journey() {
             Joined the Master in Arts: Urban Design: Art, City, Society at the
             Universitat de Barcelona. <br />
             <br />
-            Through out this time I kept working as a designer, still doing
-            mostly editorial, but also some web design.
+            During this time I kept working as a designer, still doing mostly
+            editorial, but also some web design.
           </div>
         </div>
         <div className={styles.timelineItem}>
@@ -135,7 +135,7 @@ function Journey() {
           </div>
           <div className={styles.timelineDescription}>
             Back in Mexico, it became clear that urban renewal was still not in
-            the political agenda, and therefore a difficult field to work in.{" "}
+            the political agenda, and therefore a difficult field to work in.
             <br />
             <br />
             At this time, I taught myself a bit of HTML, CSS and some JS, and
@@ -158,13 +158,13 @@ function Journey() {
           <div className={styles.timelineDescription}>
             After graduating from the MSc, I moved to London, but finding a job
             in urban development was difficult. Soon I had to find any job to
-            start paying the bills. I did customer support in various levels,
-            got a certification to teach tennis, and moderated content for
-            TikTok. <br />
-            <br /> During this time I worked both in small and big teams, and
-            gained valuable and versatile soft skills. By paying close attention
-            to detail and maintaining effective communication with a diverse
-            range of stakeholders, I successfully resolved numerous challenges.
+            start paying the bills. During this time, I did customer support in
+            various levels, got a certification to teach tennis, and moderated
+            content for TikTok. <br />
+            <br /> I worked both in small and big teams, and gained valuable and
+            versatile soft skills. By paying close attention to detail and
+            maintaining effective communication with a diverse range of
+            stakeholders, I successfully resolved numerous challenges.
           </div>
         </div>
         <div className={styles.timelineItem}>
