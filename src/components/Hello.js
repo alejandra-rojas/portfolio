@@ -101,6 +101,9 @@ function Hello() {
           travelling.
         </p>
       </div>
+
+      {/* <div className={styles.scrolldown}>Scroll Down</div> */}
+      <div class={`${styles.arrow} ${styles.animated} ${styles.bounce}`}></div>
     </section>
   );
 }
