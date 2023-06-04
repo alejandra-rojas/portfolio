@@ -55,6 +55,15 @@ h1 {
 
 .projectLinks {
   font-size: 1rem;
+  font-weight: 600;
+}
+
+.projectLinks a {
+  text-decoration: underline solid 1px;
+}
+
+.projectLinks:nth-of-type(3) {
+  padding-top: 3rem;
 }
 
 h2 {

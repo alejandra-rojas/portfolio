@@ -139,31 +139,27 @@ function Planet() {
           submit their entries to the contest. Later on, the website displayed
           the finalists and allowed the public to register and vote for their
           favorites to select the winners. Lastly, the voting widget was removed
-          and the winners were displayed, My learnings and struggles this
-          project are presented here.
+          and the winners were displaye. My learnings and struggles this project
+          are presented here.
         </h2>
 
         <div className={styles.description}>
           The communication lead of this project, a friend and old university
-          classmate, knew I was studying coding, and got me into the project.
-          The webpage had two main phases, one mostly informational and another
-          in which the public would vote for the finalist artworks to select the
-          winner. The second phase was the most challenging, however, the voting
-          widget, would need to be implemented 3-4 months after the first phase.
-          Although I was just starting my dev studies at this point, the project
+          classmate, knew I was studying coding and got me into the project. I
+          was hesitant to join, as I still didnt had all the skills I needed,
+          but I also knew that the most challening part (the voting widget),
+          would need to be implemented 3-4 months after the first phase. This
           timeframe would allow me to make progress in my course and explore
-          solutions for the technical implementation of the voting widget.
+          solutions.
           <br />
           <br />
-          During the initial phase, the website primarily provided information
-          about the contest, including contest details, available resources, and
-          a submission form for participants to submit their artwork. The main
-          challenge at this stage was to create a responsive webpage within a
-          week's time. Although I received a mostly finished desktop design, I
-          had to determine the mobile implementation and prepare all the
-          necessary icons and images for web implementation. For this phase, I
-          used HTML, CSS, and JavaScript to develop the webpage. It was only in
-          the second phase that I refactored the code into a React app. <br />
+          The main challenge for the first phase was to create a responsive
+          webpage within a week's time. Although I received a mostly finished
+          desktop design, I had to determine the mobile implementation and
+          prepare all the necessary icons and images. For this phase, I used
+          HTML, CSS, and a sprinkle of JavaScript to develop the webpage. It was
+          only in the second phase that I refactored the code into a React app.
+          <br />
           <div className={styles.projectImg}>
             <img
               src="../assets/Planet2.png"
@@ -173,24 +169,12 @@ function Planet() {
           </div>
           <br />
           In school, I had a glimpse of Firebase as a convenient data storage
-          solution. So, when considering the voting widget, I focused on
-          Firebase as it appeared to be a straightforward choice at that point.
-          After extensive research and watching numerous tutorial videos, I
-          stumbled upon a video that developed a blog-like page with a "like"
-          functionality. I adapted this approach to suit the requirements of my
-          project. <br />
-          <br />
-          My solution incorporated Firebase Authentication with email and phone
-          to register users. Firebase Database was employed to store the artwork
-          details, such as image url, title, and vote. React would then connect
-          to the database and dynamically render the artworks on the webpage.
-          For the voting functionality, users were assigned a unique ID upon
-          registration. When they voted, their ID would be stored in the
-          database's votes array, effectively preventing them from voting again
-          for the same artwork. Additionally, a click event triggered an
-          animation where the thumbs-up icon would move up and change colour, to
-          give visual feedback that their vote was submitted. <br />
-          <br />
+          solution. So, when thinking about the voting widget implementation, I
+          focused on Firebase as it appeared to be a straightforward choice at
+          that point. After extensive research and watching numerous tutorial
+          videos, I stumbled upon a video that developed a blog-like page with a
+          "like" functionality. I adapted the approach on the video to suit the
+          requirements of my project. <br />
           <div className={styles.projectImg}>
             <img
               src="../assets/Canvas.gif"
@@ -198,6 +182,19 @@ function Planet() {
               className={styles.gifCanvas}
             />
           </div>
+          <br />
+          My solution incorporated Firebase Authentication with email and phone
+          to register users. Firebase Database stored the artwork details, such
+          as image url, title, and vote. React would then connect to the
+          database and dynamically render the artworks on the webpage. For the
+          voting functionality, users were assigned a unique ID upon
+          registration. When they voted, their ID would be stored in the
+          database's votes array, effectively preventing them from voting again
+          for the same artwork. Upon voting, the counter updated instantly to
+          add the vote. Additionally, a click event triggered a CSS animation
+          where the thumbs-up icon would move up and change colour to give
+          visual feedback that their vote was submitted. <br />
+          <br />
           The second stage of the webpage, the voting stage, would last for 10
           days. The same day it went live, I noticed a significant increase in
           database reads, and it looked like Firebase's free daily limit of 50K
@@ -205,9 +202,9 @@ function Planet() {
           the limit, I quickly realised that paying for additional reads was not
           a viable option. Since the communication lead was unresponsive to my
           messages on that Saturday, I decided to disable the widget as the 50K
-          daily limit was close. I displayed a maintenance message and
-          frantically investigated the cause of the excessive reads and
-          potential solutions.
+          daily limit was close. I displayed a maintenance message and started
+          to investigate the cause of the excessive reads and potential
+          solutions.
           <img
             src="../images/project-planet/reads.png"
             alt="Reads generated in the first 15 hours of the website went live"
@@ -222,11 +219,8 @@ function Planet() {
           database (votes) propagated automatically to all active browsers,
           resulting in additional database reads. <br />
           <br />
-          Given the time constraints and the need to resolve the widget issue
-          promptly, I dedicated myself to finding a solution to prevent the
-          problem from recurring on a daily basis. After extensive online
-          research, I refactored the code and replaced onSnapshot() method with
-          the getDocs() method. <br />
+          After extensive research, the morning after I refactored the code and
+          replaced onSnapshot() method with the getDocs() method. <br />
           <br />
           <SyntaxHighlighter
             className={styles.syntax}
@@ -247,24 +241,40 @@ function Planet() {
           <div className={styles.caption}>
             Refactored code to reduce database views
           </div>
+          <br />
           The code refactoring came with a trade-off in the UX, as the user no
           longer received immediate feedback upon submitting their vote, and
           updates to the vote counter could only be seen by refreshing the
           browser. To address this I implemented a success notification and
-          adviced refreshing the page to see their vote applied . By midday the
-          following day, I deployed the refactored code, resulting in a
-          significant decrease in database reads. Fortunately, I did not
-          encounter the need to disable the widget for the remaining duration of
-          the voting stage.
+          adviced refreshing the page to see their vote applied . The refactored
+          code, reduced the reads significantly and I did not had to disable the
+          widget for the remaining duration of the voting stage.
           <br />
           <br />I was open and transparent regarding the challenges I faced
           while deploying the voting widget, and the client was not bothered as
           all the issues were resolved and the disruption was minimal. Overall,
           the client was very satisfied with the project's outcome, and I
-          personally gained invaluable learning experiences from the process,
-          reminding me that I enjoy working with code, and that I am able to
-          hanlde pressure.
+          personally learned a lot in the process, reminding me that I enjoy
+          working with code, and that I am able to hanlde and deliver under
+          pressure.
         </div>
+      </div>
+      <div className={styles.projectLinks}>
+        <a
+          href="https://theplanetisyourcanvas.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Deployed website
+        </a>
+        &nbsp;|&nbsp;
+        <a
+          href="https://github.com/alejandra-rojas/ThePlanetIsYourCanvas"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub repo
+        </a>
       </div>
       <div className={styles.footer}>
         <div className={styles.back} onClick={handleClick}>

@@ -373,9 +373,9 @@ function Projects() {
               <div className={styles.projectData}>
                 <div className={styles.projectTitle}>Framer Motion</div>
                 <div className={styles.projectDescription}>
-                  Experimienting with framer motion to add animations and
-                  transitions to a landing page, including a cursor animation
-                  with variants. Page in progress.
+                  Experimenting with framer motion to add animations and
+                  transitions to a page, including a cursor animation with
+                  variants. Work in progress.
                 </div>
                 <div className={styles.projectLinks}>
                   <a href="https://framer.netlify.app/" target="_blank">
