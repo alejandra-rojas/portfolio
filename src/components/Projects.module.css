@@ -229,6 +229,9 @@
 .projectLinks {
   font-size: 0.9rem;
   padding-top: 12px;
+}
+
+.projectLinks a {
   text-decoration: underline 1px black;
 }
 

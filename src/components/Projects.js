@@ -244,13 +244,13 @@ function Projects() {
                   <a href="https://hiquizzz.netlify.app/" target="_blank">
                     Deployed website
                   </a>
-                  {/* &nbsp;|&nbsp;
-              <a
-                href="https://github.com/alejandra-rojas/APIs-RandomQuoteinArandomFont"
-                target="_blank"
-              >
-                GitHub repo
-              </a> */}
+                  &nbsp;|&nbsp;
+                  <a
+                    href="https://github.com/alejandra-rojas/QuizTime"
+                    target="_blank"
+                  >
+                    GitHub repo
+                  </a>
                 </div>
               </div>
               <div className={styles.projectStack}>
@@ -373,9 +373,8 @@ function Projects() {
               <div className={styles.projectData}>
                 <div className={styles.projectTitle}>Framer Motion</div>
                 <div className={styles.projectDescription}>
-                  Experimenting with framer motion to add animations and
-                  transitions to a page, including a cursor animation with
-                  variants. Work in progress.
+                  Experimenting with framer motion to add various animations and
+                  transitions to a webpage. Work in progress.
                 </div>
                 <div className={styles.projectLinks}>
                   <a href="https://framer.netlify.app/" target="_blank">
