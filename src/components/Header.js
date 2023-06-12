@@ -38,7 +38,7 @@ function Header() {
         <ul className={styles.navMain}>
           <li>
             <a
-              //href="#about"
+              href="#about"
               role="menuitem"
               className={currentSection === "about" ? "active" : ""}
             >
@@ -47,7 +47,7 @@ function Header() {
           </li>
           <li>
             <a
-              //href="#projects"
+              href="#projects"
               role="menuitem"
               className={currentSection === "projects" ? "active" : ""}
             >
@@ -56,7 +56,7 @@ function Header() {
           </li>
           <li>
             <a
-              //href="#contact"
+              href="#contact"
               role="menuitem"
               className={currentSection === "contact" ? "active" : ""}
             >

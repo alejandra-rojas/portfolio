@@ -41,7 +41,7 @@
 
   .intro {
     padding-top: 25vh;
-    width: 85%;
+    width: 89%;
     max-width: 1060px;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@
 
   .scrollDowns {
     position: absolute;
-    bottom: 20px;
+    top: 6rem;
     right: 2rem;
     width: 34px;
     height: 55px;
