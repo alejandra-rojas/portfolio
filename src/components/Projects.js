@@ -236,9 +236,10 @@ function Projects() {
               <div className={styles.projectData}>
                 <div className={styles.projectTitle}>Pub Quiz!</div>
                 <div className={styles.projectDescription}>
-                  Final excercise for the javascript fundamentals course. The
-                  quiz gets all data from an open API, and this excercises also
-                  explores the use of local storage to save the scores.
+                  Final project of the JS FUNdamentals course at HyperIsland.
+                  The quiz gets all data from an open API, and the project is
+                  all about DOM manipulation, and the fundamentals of
+                  Javascript, including the use of local storage.
                 </div>
                 <div className={styles.projectLinks}>
                   <a href="https://hiquizzz.netlify.app/" target="_blank">
@@ -320,10 +321,10 @@ function Projects() {
                         (Latin America and the Caribbean 2022-2023).
                         <br />
                         <br />
-                        This is my first real client project, since getting back
-                        to coding. The webpage was built with React and used
-                        Firebase Database & Authentication to register users and
-                        their votes.
+                        My first real client project. The webpage was built with
+                        React and used Firebase Database & Authentication to
+                        register users and their votes during the voting stage
+                        of the competition.
                       </div>
                     </div>
                     <div className={styles.projectStack}>
