@@ -93,8 +93,8 @@ function Hello() {
           my design background I've developed an eye for detail, and I enjoy
           working with design systems, user interfaces and all the little
           details of the frontend. In the near future, I intend to learn more
-          about accesibility, performance and SEO. Right now, I'm enjoying
-          dipping my toes in the world of WebGL and Three.js.
+          about accesibility and performance. Right now, I'm enjoying dipping my
+          toes in the world of WebGL and Three.js.
         </p>
         <p>
           Apart from coding, I like playing tennis, eating spicy food and
